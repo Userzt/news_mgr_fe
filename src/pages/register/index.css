@@ -1,0 +1,55 @@
+.reg_wrapper{
+    height: 100vh;
+    background-image: url('../../assets/bg_pic.jpg');
+}
+.reg_tit{
+    margin-bottom: 40px;
+}
+.reg_tit h2{
+    margin-bottom: 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+.reg_tit p{
+    color: rgb(141, 141, 141);
+}
+.reg_form{
+    position: absolute;
+    right: 200px;
+    top: 100px;
+    width: 480px;
+    height: 600px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255,.7);
+    border-radius: 15px;
+}
+/* required情况下去掉*号 */
+label::before{
+    content: '' !important;
+}
+label{
+    height: 40px !important;
+}
+.ant-input{
+    border-radius: 8px !important;
+}
+
+.reg_text{
+    position: fixed;
+    left: 195px;
+    top: 314px;
+    color: #fff;
+}
+.reg_text h3{
+    font-size: 54px;
+    letter-spacing: 0;
+    font-weight: 700;
+    color: #fff;
+}
+.reg_text p{
+    font-size: 32px;
+    letter-spacing: 3.81px;
+    font-weight: 300;
+}
+
+   
