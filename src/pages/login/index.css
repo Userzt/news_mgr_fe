@@ -1,39 +1,39 @@
-.login_wrapper{
-    height: 100vh;
-    background-image: url('../../assets/bg_pic.jpg');
+.login_wrapper {
+  height: 100vh;
+  background-image: url("../../assets/bg_pic.jpg");
 }
-.login_inner{
-    padding: 40px;
+.login_inner {
+  padding: 40px;
 }
-.login_form{
-    position: absolute;
-    right: 200px;
-    top: 100px;
-    width: 400px;
-    height: 500px;
-    background-color: rgba(255, 255, 255,0.8);
-    border-radius: 15px;
+.login_form {
+  position: absolute;
+  right: 200px;
+  top: 100px;
+  width: 400px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
 }
-.login_tit img{
-    width: 90px;
+.login_tit img {
+  width: 90px;
 }
 .login_tit {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 54px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 54px;
 }
-.login_tit span{
-    margin-left: 20px;
+.login_tit span {
+  margin-left: 20px;
 }
-.login_tit p{
-    margin-left: 20px;
-    font-size: 18px;
+.login_tit p {
+  margin-left: 20px;
+  font-size: 18px;
 }
-.login_inner Form{
-    margin-top: 40px;
+.login_inner Form {
+  margin-top: 40px;
 }
-.forgrt_pwd{
-    display: flex;
-    justify-content: space-between;
+.forget_pwd {
+  display: flex;
+  justify-content: space-between;
 }

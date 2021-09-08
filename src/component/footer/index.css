@@ -1,0 +1,12 @@
+footer {
+  height: 120px;
+  margin-top: 200px;
+}
+.footer_inner {
+  padding: 50px 0;
+  text-align: center;
+}
+.footer_nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
