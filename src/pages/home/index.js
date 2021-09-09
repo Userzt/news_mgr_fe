@@ -9,7 +9,7 @@ import axios from "axios";
 import Footer from "../../component/footer/index";
 import { connect } from "react-redux";
 import { setLoginInfo } from "../../store/action";
-import {formatTime} from "../../utils/formatTime"
+import { formatTime } from "../../utils/formatTime";
 
 class Home extends Component {
   constructor() {
@@ -108,6 +108,7 @@ class Home extends Component {
     this.setState({
       currentColIndex: index,
       isAll: false,
+      currentPage: 1,
     });
   }
 
@@ -116,9 +117,9 @@ class Home extends Component {
     sessionStorage.setItem("currentColName", "");
     this.setState({
       isAll: true,
+      currentPage: 1,
     });
   }
-
 
   //获取点击的新闻Id
   getDetails(newsId) {
@@ -127,8 +128,10 @@ class Home extends Component {
 
   //页码改变
   onChangePage = (pageNumber) => {
-    console.log(pageNumber);
-    this.getData(sessionStorage.getItem("currentColName"), pageNumber);
+    this.getData(sessionStorage.getItem("currentColName") || "", pageNumber);
+    this.setState({
+      currentPage: pageNumber,
+    });
   };
 
   render() {
@@ -237,6 +240,7 @@ class Home extends Component {
             <Pagination
               showQuickJumper
               defaultCurrent={1}
+              current={this.state.currentPage}
               total={this.state.newsData.total}
               onChange={this.onChangePage}
             />
